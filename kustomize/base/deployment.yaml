@@ -20,17 +20,17 @@ spec:
     spec:
       containers:
       - name: devops-toolkit
-        image: vfarcic/devops-toolkit
+        image: rieicp/simple-app
         ports:
-        - containerPort: 80
+        - containerPort: 8088
         livenessProbe:
           httpGet:
-            path: /
-            port: 80
+            path: /hello
+            port: 8088
         readinessProbe:
           httpGet:
-            path: /
-            port: 80
+            path: /hello
+            port: 8088
         resources:
           limits:
             cpu: 1000m
