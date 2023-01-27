@@ -11,9 +11,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/rieicp/argo-cd-image-updater
+    path: helm/simple-spring-app-4-testing-debugging-in-k8s
+    repoURL: https://github.com/rieicp/simple-java-app.git
     targetRevision: HEAD
-    path: kustomize/overlays/production
   destination:
     server: https://kubernetes.default.svc
     namespace: default
